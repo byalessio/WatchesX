@@ -27,7 +27,7 @@ header {
 
 /* Logo */
 .logo {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arial', serif;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -98,8 +98,8 @@ header {
 /* ========== IMAGE DE LA MONTRE ========== */
 .watch-container {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,12 +273,17 @@ p {
     }
     
     .watch-container {
-        width: 180px;
-        height: 180px;
+        width: 100px;
+        height: 100px;
     }
     
     .watch-info {
         text-align: center;
+    }
+    
+    .stars {
+        margin-bottom: 30px;
+        display: none;
     }
     
     h1 {
@@ -301,8 +306,8 @@ p {
     }
     
     .watch-container {
-        width: 220px;
-        height: 220px;
+        width: 100px;
+        height: 100px;
     }
     
     h1 {
