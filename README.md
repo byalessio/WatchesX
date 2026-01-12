@@ -38,6 +38,10 @@ Le site s'adapte parfaitement à tous les écrans :
 - GitHub : https://github.com/byalessio
 - LinkedIn : https://www.linkedin.com/in/byalessio
 - Email : contact@byalessio.com
-
+  
+📄 Licence
 
 Projet réalisé dans le cadre de mon portfolio de développeur web.
+Ce projet est à usage éducatif et portfolio uniquement.
+Les images des montres BAUME sont utilisées à titre d'exemple.
+Le code est libre d'utilisation.
