@@ -22,10 +22,6 @@ Site développé en HTML/CSS/JavaScript pour démontrer mes compétences en dév
 - Font Awesome
 - Google Fonts
 
-🚀 Démo en ligne
-
-👉 
-
 📱 Responsive
 
 Le site s'adapte parfaitement à tous les écrans :
