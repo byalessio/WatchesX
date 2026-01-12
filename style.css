@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #2c2c2c;
+}
+
+/* ========== HEADER ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #1a1a1a;
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #d4af37;
+}
+
+/* Icônes réseaux sociaux */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #2c2c2c;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #d4af37;
+}
+
+/* Menu hamburger (caché par défaut) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background-color: #1a1a1a;
+    transition: 0.3s;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 120px 50px 50px;
+    gap: 80px;
+}
+
+/* ========== IMAGE DE LA MONTRE ========== */
+.watch-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.watch-image.active {
+    opacity: 1;
+}
+
+/* Navigation par points */
+.dots {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background-color: #d4af37;
+}
+
+.dot:hover {
+    background-color: #b8960f;
+}
+
+/* ========== INFORMATIONS DE LA MONTRE ========== */
+.watch-info {
+    max-width: 450px;
+}
+
+/* Étoiles */
+.stars {
+    color: #d4af37;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Titre */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+h1 span {
+    font-style: italic;
+    color: #d4af37;
+}
+
+/* Description */
+p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #6a6a6a;
+    margin-bottom: 30px;
+}
+
+/* Prix */
+.price {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+/* Bouton Ajouter au panier */
+.add-to-cart {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #d4af37;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .hero {
+        gap: 50px;
+        padding: 120px 30px 50px;
+    }
+    
+    .watch-container {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    /* Header mobile */
+    header {
+        padding: 20px 30px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding: 100px 30px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .social-icons {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    /* Hero mobile */
+    .hero {
+        flex-direction: column;
+        padding: 100px 20px 50px;
+        gap: 40px;
+    }
+    
+    .watch-container {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .watch-info {
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    .price {
+        font-size: 32px;
+    }
+    
+    .add-to-cart {
+        width: 100%;
+    }
+}
+
+/* Petit mobile */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 22px;
+    }
+    
+    .watch-container {
+        width: 220px;
+        height: 220px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+}
