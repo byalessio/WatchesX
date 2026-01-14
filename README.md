@@ -13,6 +13,7 @@ Site développé en HTML/CSS/JavaScript pour démontrer mes compétences en dév
 - ✅ Carrousel de 3 montres interactif
 - ✅ Menu hamburger pour mobile
 - ✅ Interface élégante et moderne
+- ✅ DARK MODE
 
 🛠️ Technologies
 
