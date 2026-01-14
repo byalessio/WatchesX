@@ -472,8 +472,8 @@ p {
 
 @media (max-width: 360px) {
     .watch-container {
-        width: 200px;
-        height: 200px;
+        width: 140px;
+        height: 140px;
     }
     
     .dots {
