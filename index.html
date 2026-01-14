@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WatchesX</title>
+    <title>WatchesX - Montres de Luxe</title>
     
     <!-- Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,18 +21,23 @@
         
         <nav class="nav-menu" id="navMenu">
             <a href="#home">Home</a>
-            <a href="#">À propos</a>
-            <a href="#">À l'affiche</a>
-            <a href="#">Nouveauté</a>
+            <a href="#about">À propos</a>
+            <a href="#featured">À l'affiche</a>
+            <a href="#new">Nouveauté</a>
         </nav>
         
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
         
-        <!-- Menu hamburger -->
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -41,25 +46,27 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero" id="home">
         
-        <!-- Image de la montre -->
         <div class="watch-container">
-            <img src="images/watches-1.png" alt="Montre 1" class="watch-image active">
-            <img src="images/watches-2.png" alt="Montre 2" class="watch-image">
-            <img src="images/watches-3.png" alt="Montre 3" class="watch-image">
-            
-            <!-- Navigation par points -->
+            <img src="images/watches-1.png" alt="Montre personnalisée 1" class="watch-image active">
+            <img src="images/watches-2.png" alt="Montre personnalisée 2" class="watch-image">
+            <img src="images/watches-3.png" alt="Montre personnalisée 3" class="watch-image">
             <div class="dots">
-                <span class="dot active" onclick="changeSlide(0)"></span>
-                <span class="dot" onclick="changeSlide(1)"></span>
-                <span class="dot" onclick="changeSlide(2)"></span>
+                <button class="dot active" onclick="changeSlide(0)" aria-label="Montre 1"></button>
+                <button class="dot" onclick="changeSlide(1)" aria-label="Montre 2"></button>
+                <button class="dot" onclick="changeSlide(2)" aria-label="Montre 3"></button>
             </div>
         </div>
 
-        <!-- Informations de la montre -->
         <div class="watch-info">
-            <div class="stars">★★★★☆</div>
+            <div class="stars" aria-label="4 étoiles sur 5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
             
             <h1>Montre Personnalisée<br><span>Pièce Rare</span></h1>
             
@@ -69,7 +76,10 @@
             
             <div class="price">€550</div>
             
-            <button class="add-to-cart">AJOUTER AU PANIER</button>
+            <button class="add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                AJOUTER AU PANIER
+            </button>
         </div>
 
     </section>
